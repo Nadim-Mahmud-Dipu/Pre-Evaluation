@@ -16,13 +16,14 @@ public class StudentService {
         return repository.findAll();
     }
 
-<<<<<<< HEAD
     public Student saveStudent(Student student) {
         System.out.println(student.getCGPA());
         return repository.save(student);
     }
 
+    public Student getStudentById(int id) {
+        return repository.findById(id).orElse(null);
+    }
 
-=======
->>>>>>> da86f773f1926f24a4d33d37feabfa33f71b8684
+
 }
