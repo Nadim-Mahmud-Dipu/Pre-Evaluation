@@ -16,4 +16,10 @@ public class StudentService {
         return repository.findAll();
     }
 
+    public Student saveStudent(Student student) {
+        System.out.println(student.getCGPA());
+        return repository.save(student);
+    }
+
+
 }
