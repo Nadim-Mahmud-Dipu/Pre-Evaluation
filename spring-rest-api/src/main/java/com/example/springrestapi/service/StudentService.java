@@ -61,4 +61,10 @@ public class StudentService {
 
         return repository.save(existingStudent);
     }
+
+    public String deleteStudent(int id){
+        repository.deleteById(id);
+        return "Student Removed: " + id;
+    }
+
 }

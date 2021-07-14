@@ -47,4 +47,9 @@ public class ApplicationController {
         return service.updateStudent(student);
     }
 
+    @DeleteMapping("/api/v1/users/{id}")
+    public String deleteStudent(@PathVariable Integer id) {
+        return service.deleteStudent(id);
+    }
+
 }
