@@ -37,4 +37,9 @@ public class ApplicationController {
         return service.getStudentById(id);
     }
 
+    @GetMapping("/api/v1/users/{first_name}")
+    public Student findStudentByName(@PathVariable String first_name) {
+        return service.getStudentByFirstName(first_name);
+    }
+
 }

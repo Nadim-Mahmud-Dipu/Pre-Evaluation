@@ -25,5 +25,8 @@ public class StudentService {
         return repository.findById(id).orElse(null);
     }
 
+    public Student getStudentByFirstName(String first_name) {
+        return repository.findByFirstName(first_name);
+    }
 
 }
