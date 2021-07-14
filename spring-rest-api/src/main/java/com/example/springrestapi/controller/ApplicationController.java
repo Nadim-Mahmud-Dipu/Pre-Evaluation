@@ -42,4 +42,9 @@ public class ApplicationController {
         return service.getStudentByFirstName(first_name);
     }
 
+    @PutMapping("/api/v1/users")
+    public Student updateStudent(@RequestBody Student student) {
+        return service.updateStudent(student);
+    }
+
 }
